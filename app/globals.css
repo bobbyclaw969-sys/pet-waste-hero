@@ -3,7 +3,6 @@
 @theme {
   --color-primary: #22c55e;
   --color-primary-dark: #16a34a;
-  --color-secondary: #0ea5e9;
 }
 
 :root {
@@ -27,10 +26,83 @@ body {
   color: hsl(var(--foreground));
 }
 
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: pulse-green 2s infinite;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+}
+
+@keyframes pulse-green {
+  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6); }
+}
+
+/* Hero gradient */
 .hero-gradient {
   background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
 }
 
+/* Before/After gallery */
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.ba-slider .before,
+.ba-slider .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ba-slider .before {
+  clip-path: inset(0 50% 0 0);
+}
+
+.ba-slider .slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: white;
+  cursor: ew-resize;
+  transform: translateX(-50%);
+}
+
+/* Trust badges */
 .trust-badge {
   backdrop-filter: blur(8px);
+}
+
+/* Sticky header */
+.sticky-nav {
+  transition: all 0.3s ease;
+}
+
+.sticky-nav.scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
