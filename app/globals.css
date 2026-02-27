@@ -64,7 +64,7 @@ body {
 /* Hero background image */
 .hero-bg {
   background: linear-gradient(135deg, rgba(20, 83, 45, 0.9) 0%, rgba(34, 197, 94, 0.8) 100%),
-              url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1920&q=80') center/cover;
+              url('https://images.unsplash.com/photo-1534361960057-19889db9621e?w=1920&q=80') center/cover;
 }
 
 /* Before/After gallery */
