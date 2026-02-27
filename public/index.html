@@ -3,285 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pet Waste Hero | Spring Hill Pooper Scooper • Instant Text Quotes</title>
-  <meta name="description" content="Spring Hill's #1 pooper scooper. Instant quotes via text! No contracts, 100% satisfaction. Serving Franklin, Columbia, Thompson's Station.">
+  <title>Pet Waste Hero | Professional Poop Scooping in Spring Hill</title>
+  <meta name="description" content="Professional pooper scooper service in Spring Hill. Text for instant quotes. No contracts, no stress.">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: { primary: '#10b981', primaryDark: '#059669' }
-        }
-      }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-bg {
+      background: linear-gradient(135deg, rgba(20, 83, 45, 0.9) 0%, rgba(34, 197, 94, 0.8) 100%),
+                  url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80') center/cover;
     }
-  </script>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐕</text></svg>">
+    .card-hover { transition: all 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); }
+  </style>
 </head>
-<body class="font-sans text-slate-900 antialiased">
-
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/4155238886?text=Hi%20Alex,%20I%20need%20a%20quote%20for%20my%20yard%20in%20Spring%20Hill!" class="fixed bottom-6 right-6 z-50 bg-primary text-white px-6 py-4 rounded-full font-bold shadow-2xl flex items-center gap-3 hover:bg-primaryDark hover:scale-105 transition-all duration-300" target="_blank">
-    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span>Chat with Alex 24/7</span>
-  </a>
-
-  <!-- Nav -->
-  <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-40 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
-      <div class="flex items-center gap-2">
-        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"><span class="text-2xl">🐕</span></div>
-        <span class="font-bold text-xl">Pet Waste <span class="text-primary">Hero</span></span>
-      </div>
-      <div class="hidden md:flex items-center gap-8">
-        <a href="#pricing" class="text-slate-600 hover:text-primary font-medium">Pricing</a>
-        <a href="#reviews" class="text-slate-600 hover:text-primary font-medium">Reviews</a>
-        <a href="#service-area" class="text-slate-600 hover:text-primary font-medium">Service Area</a>
-        <a href="https://wa.me/4155238886?text=Hi%20Alex,%20I%20need%20a%20quote!" class="bg-primary hover:bg-primaryDark text-white px-5 py-2.5 rounded-full font-semibold transition">Text Now</a>
-      </div>
+<body class="bg-white text-gray-800 antialiased">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-green-700">Pet Waste Hero</a>
+      <a href="#pricing" class="text-sm font-medium text-gray-600 hover:text-green-700 transition">Pricing</a>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="relative min-h-screen flex items-center">
-    <div class="absolute inset-0 z-0">
-      <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1920&q=80" alt="Clean backyard" class="w-full h-full object-cover">
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/50"></div>
-    </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 py-32">
-      <div class="max-w-3xl">
-        <div class="inline-flex items-center gap-2 bg-primary/20 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 border border-white/20">
-          <span>📍</span> SPRING HILL'S #1 POOPER SCOOPER
-        </div>
-        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-          Hate Scooping<br><span class="text-primary">Poop in Spring Hill?</span>
-        </h1>
-        <p class="text-xl md:text-2xl text-slate-200 mb-8 max-w-2xl">We've got you covered. Get your yard clean in minutes – just text us!</p>
-        <div class="flex flex-col sm:flex-row gap-4 mb-10">
-          <a href="https://wa.me/4155238886?text=Hi%20Alex,%20I%20need%20a%20quote%20for%20my%20yard%20in%20Spring%20Hill!" class="bg-primary hover:bg-primaryDark text-white px-8 py-5 rounded-full font-bold text-lg transition hover:scale-105 shadow-2xl flex items-center justify-center gap-3">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Get Instant Quote via Text!
-          </a>
-          <a href="#pricing" class="bg-white/10 hover:bg-white/20 text-white border-2 border-white/30 px-8 py-5 rounded-full font-bold text-lg transition hover:scale-105">View Pricing</a>
-        </div>
-        <div class="flex items-center gap-6">
-          <div class="flex -space-x-3">
-            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop&crop=face" class="w-12 h-12 rounded-full border-3 border-white">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" class="w-12 h-12 rounded-full border-3 border-white">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" class="w-12 h-12 rounded-full border-3 border-white">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" class="w-12 h-12 rounded-full border-3 border-white">
-          </div>
-          <div>
-            <div class="flex items-center gap-1"><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-white font-semibold ml-2">5.0</span></div>
-            <p class="text-slate-300 text-sm">500+ Spring Hill families</p>
-          </div>
-        </div>
-      </div>
+  <section class="hero-bg min-h-[85vh] flex items-center justify-center px-6 pt-16">
+    <div class="text-center text-white max-w-2xl">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+        Yard Clean.<br>Hassle Gone.
+      </h1>
+      <p class="text-xl md:text-2xl text-green-50 mb-10 font-light">
+        Professional poop scooping in Spring Hill. No contracts. No stress.
+      </p>
+      <a href="https://wa.me/4155238886?text=Hi%20Alex,%20I'd%20like%20a%20quote!" 
+         class="inline-flex items-center gap-3 bg-white text-green-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-50 transition shadow-lg">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Text for Quote
+      </a>
     </div>
   </section>
 
-  <!-- Trust Strip -->
-  <section class="bg-primary py-8">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div class="text-white"><p class="text-3xl md:text-4xl font-bold">500+</p><p class="text-primary-100">Happy Families</p></div>
-        <div class="text-white"><p class="text-3xl md:text-4xl font-bold">100%</p><p class="text-primary-100">Satisfaction</p></div>
-        <div class="text-white"><p class="text-3xl md:text-4xl font-bold">No</p><p class="text-primary-100">Contracts</p></div>
-        <div class="text-white"><p class="text-3xl md:text-4xl font-bold">Local</p><p class="text-primary-100">Owned</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Problem/Solution -->
-  <section class="py-20 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h2 class="text-4xl font-bold mb-6">Tired of Picking Up<br><span class="text-primary">Land Mines?</span></h2>
-        <p class="text-lg text-slate-600 mb-6">Week after week, it's the same dreaded task. But it doesn't have to be that way!</p>
-        <p class="text-lg text-slate-600 mb-8">Pet Waste Hero has been serving Spring Hill since 2018. We scoop, you enjoy your clean yard!</p>
-        <ul class="space-y-4">
-          <li class="flex items-center gap-3"><span class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">✓</span>We text when we're on the way</li>
-          <li class="flex items-center gap-3"><span class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">✓</span>We sanitize our equipment</li>
-          <li class="flex items-center gap-3"><span class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">✓</span>We wear branded uniforms</li>
-          <li class="flex items-center gap-3"><span class="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">✓</span>Fully insured & bonded</li>
-        </ul>
-      </div>
-      <div class="relative">
-        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80" alt="Happy golden retriever" class="rounded-3xl shadow-2xl w-full">
-        <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
-          <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center"><span class="text-2xl">🛡️</span></div>
-          <div><p class="font-bold">Clean Paws</p><p class="text-sm text-slate-500">Guarantee</p></div>
+  <!-- Benefits -->
+  <section class="py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Text for Quotes</h3>
+          <p class="text-sm text-gray-500">Instant responses</p>
+        </div>
+        <div class="text-center p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Locally Owned</h3>
+          <p class="text-sm text-gray-500">Your neighbors</p>
+        </div>
+        <div class="text-center p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Satisfaction Guaranteed</h3>
+          <p class="text-sm text-gray-500">100% guaranteed</p>
+        </div>
+        <div class="text-center p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Transparent Pricing</h3>
+          <p class="text-sm text-gray-500">No surprises</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Before/After -->
-  <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4">The Transformation</h2>
-      <p class="text-xl text-slate-600">From messy yard to pristine paradise – in just one visit!</p>
-    </div>
-    <div class="max-w-4xl mx-auto px-4 grid md:grid-cols-2 gap-8">
-      <div class="relative rounded-2xl shadow-xl overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Before messy yard" class="w-full h-80 object-cover">
-        <div class="absolute top-4 left-4 bg-red-500 text-white px-6 py-2 rounded-full font-bold">BEFORE: When We Arrive</div>
-      </div>
-      <div class="relative rounded-2xl shadow-xl overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="After clean yard" class="w-full h-80 object-cover">
-        <div class="absolute top-4 right-4 bg-primary text-white px-6 py-2 rounded-full font-bold">AFTER: Pet Waste Hero ✨</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section class="py-20 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4">Why Spring Hill Chooses Us</h2>
-      <p class="text-xl text-slate-600">We're not just another scooper – we're your neighbors!</p>
-    </div>
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-        <div class="text-4xl mb-4">💬</div>
-        <h3 class="text-xl font-bold mb-3">Text for Quotes</h3>
-        <p class="text-slate-600">Skip the phone call! Just text us at (415) 523-8886 for an instant quote. We respond within minutes.</p>
-      </div>
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-        <div class="text-4xl mb-4">🏠</div>
-        <h3 class="text-xl font-bold mb-3">Locally Owned</h3>
-        <p class="text-slate-600">Not a franchise. We're your Spring Hill neighbors, serving since 2018. Personalized service you can trust.</p>
-      </div>
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-        <div class="text-4xl mb-4">🛡️</div>
-        <h3 class="text-xl font-bold mb-3">Sanitary & Safe</h3>
-        <p class="text-slate-600">We sanitize all equipment and shoes before every visit. No germs tracked into your home!</p>
-      </div>
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-        <div class="text-4xl mb-4">🚫</div>
-        <h3 class="text-xl font-bold mb-3">No Contracts</h3>
-        <p class="text-slate-600">Pay as you go. Not happy? Cancel anytime – no penalties, no hassle.</p>
-      </div>
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-        <div class="text-4xl mb-4">💰</div>
-        <h3 class="text-xl font-bold mb-3">No Hidden Fees</h3>
-        <p class="text-slate-600">What you see is what you pay. No extra charges for patios, multiple dogs, or more.</p>
-      </div>
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-        <div class="text-4xl mb-4">📱</div>
-        <h3 class="text-xl font-bold mb-3">Text Notifications</h3>
-        <p class="text-slate-600">We text you when we're on the way and when we're done. Always informed!</p>
+  <!-- Image Break -->
+  <section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80" alt="Happy dog in clean yard" class="rounded-2xl shadow-xl w-full h-80 object-cover">
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Your yard, your sanctuary.</h2>
+          <p class="text-gray-600 mb-6">We scoop so you don't have to. Enjoy your outdoor space without the worry.</p>
+          <a href="https://wa.me/4155238886?text=Hi%20Alex,%20I'd%20like%20a%20quote!" class="text-green-700 font-medium hover:underline">Get started</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing -->
-  <section id="pricing" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
-      <p class="text-xl text-slate-600">First visit 20% off! No hidden fees, ever.</p>
-    </div>
-    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-      <div class="bg-white border-2 border-slate-200 rounded-3xl p-8 hover:border-primary transition-all">
-        <div class="text-center">
-          <h3 class="text-lg font-semibold text-slate-500 mb-2">Small Yard</h3>
-          <div class="mb-6"><span class="text-5xl font-bold">$18</span><span class="text-slate-500">/visit</span><p class="text-primary font-medium mt-2">First visit $14.40!</p></div>
-          <ul class="space-y-3 text-left mb-8"><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>Up to 1/4 acre</li><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>Front & backyard</li><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>Weekly or bi-weekly</li></ul>
-          <a href="https://wa.me/4155238886?text=Hi,%20I%20have%20a%20small%20yard%20and%20want%20to%20book!" class="block w-full bg-slate-100 hover:bg-primary hover:text-white py-3 rounded-full font-semibold transition text-center">Text to Book</a>
+  <section id="pricing" class="py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Simple Pricing</h2>
+      <p class="text-center text-gray-500 mb-12">First visit 20% off</p>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Small -->
+        <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100">
+          <h3 class="text-lg font-medium text-gray-500 mb-2">Small Yard</h3>
+          <div class="mb-4">
+            <span class="text-4xl font-bold text-gray-900">$18</span>
+            <span class="text-gray-500">/visit</span>
+          </div>
+          <p class="text-green-600 font-medium mb-6">First visit: $14.40</p>
+          <ul class="text-sm text-gray-600 space-y-2 mb-8">
+            <li>Up to 1/4 acre</li>
+            <li>Weekly or bi-weekly</li>
+          </ul>
+          <a href="https://wa.me/4155238886?text=Hi,%20I%20have%20a%20small%20yard%20and%20want%20to%20book!" class="block w-full bg-green-600 text-white text-center py-3 rounded-full font-medium hover:bg-green-700 transition">Book Now</a>
         </div>
-      </div>
-      <div class="bg-white border-2 border-primary rounded-3xl p-8 relative shadow-2xl transform md:-translate-y-4">
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-1 rounded-full text-sm font-bold">MOST POPULAR</div>
-        <div class="text-center">
-          <h3 class="text-lg font-semibold text-primary mb-2">Medium Yard</h3>
-          <div class="mb-6"><span class="text-5xl font-bold">$28</span><span class="text-slate-500">/visit</span><p class="text-primary font-medium mt-2">First visit $22.40!</p></div>
-          <ul class="space-y-3 text-left mb-8"><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>Up to 1/2 acre</li><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>Front, backyard & sides</li><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>Patio/deck areas</li><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>Weekly or bi-weekly</li></ul>
-          <a href="https://wa.me/4155238886?text=Hi,%20I%20have%20a%20medium%20yard%20and%20want%20to%20book!" class="block w-full bg-primary hover:bg-primaryDark text-white py-3 rounded-full font-semibold transition text-center">Text to Book</a>
+        
+        <!-- Medium -->
+        <div class="bg-white rounded-2xl p-8 card-hover border-2 border-green-500 shadow-xl relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-medium px-3 py-1 rounded-full">Popular</div>
+          <h3 class="text-lg font-medium text-green-600 mb-2">Medium Yard</h3>
+          <div class="mb-4">
+            <span class="text-4xl font-bold text-gray-900">$28</span>
+            <span class="text-gray-500">/visit</span>
+          </div>
+          <p class="text-green-600 font-medium mb-6">First visit: $22.40</p>
+          <ul class="text-sm text-gray-600 space-y-2 mb-8">
+            <li>Up to 1/2 acre</li>
+            <li>Weekly or bi-weekly</li>
+          </ul>
+          <a href="https://wa.me/4155238886?text=Hi,%20I%20have%20a%20medium%20yard%20and%20want%20to%20book!" class="block w-full bg-green-600 text-white text-center py-3 rounded-full font-medium hover:bg-green-700 transition">Book Now</a>
         </div>
-      </div>
-      <div class="bg-white border-2 border-slate-200 rounded-3xl p-8 hover:border-primary transition-all">
-        <div class="text-center">
-          <h3 class="text-lg font-semibold text-slate-500 mb-2">Large Yard</h3>
-          <div class="mb-6"><span class="text-5xl font-bold">$38+</span><span class="text-slate-500">/visit</span><p class="text-primary font-medium mt-2">First visit 20% off!</p></div>
-          <ul class="space-y-3 text-left mb-8"><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>1/2 acre+</li><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>Custom scheduling</li><li class="flex items-center gap-2"><span class="text-primary font-bold">✓</span>Multiple dog discount</li></ul>
-          <a href="https://wa.me/4155238886?text=Hi,%20I%20have%20a%20large%20yard%20and%20want%20a%20quote!" class="block w-full bg-slate-100 hover:bg-primary hover:text-white py-3 rounded-full font-semibold transition text-center">Get Quote</a>
+        
+        <!-- Large -->
+        <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100">
+          <h3 class="text-lg font-medium text-gray-500 mb-2">Large Yard</h3>
+          <div class="mb-4">
+            <span class="text-4xl font-bold text-gray-900">$38+</span>
+            <span class="text-gray-500">/visit</span>
+          </div>
+          <p class="text-green-600 font-medium mb-6">First visit 20% off</p>
+          <ul class="text-sm text-gray-600 space-y-2 mb-8">
+            <li>1/2 acre+</li>
+            <li>Custom scheduling</li>
+          </ul>
+          <a href="https://wa.me/4155238886?text=Hi,%20I%20have%20a%20large%20yard%20and%20want%20a%20quote!" class="block w-full bg-gray-800 text-white text-center py-3 rounded-full font-medium hover:bg-gray-900 transition">Get Quote</a>
         </div>
-      </div>
-    </div>
-    <p class="text-center text-slate-500 mt-8">*Prices may vary based on yard size, number of dogs, and terrain. Text us for exact pricing!</p>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="reviews" class="py-20 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 text-center mb-12">
-      <h2 class="text-4xl font-bold mb-4">What Spring Hill Families Say</h2>
-      <p class="text-xl text-slate-600">Join 500+ happy customers</p>
-    </div>
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-2xl p-6 shadow-md">
-        <div class="flex gap-1 mb-4"><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span></div>
-        <p class="text-slate-600 mb-4">"Texted for a quote, got one same day. My yard has never looked better!"</p>
-        <p class="font-semibold">— Ken S.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-6 shadow-md">
-        <div class="flex gap-1 mb-4"><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span></div>
-        <p class="text-slate-600 mb-4">"Text booking was so easy! No more land mines in our yard."</p>
-        <p class="font-semibold">— Amy H.</p>
-      </div>
-      <div class="bg-white rounded-2xl p-6 shadow-md">
-        <div class="flex gap-1 mb-4"><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span></div>
-        <p class="text-slate-600 mb-4">"They text when they're coming and when they're done. Very professional!"</p>
-        <p class="font-semibold">— Arianna A.</p>
       </div>
     </div>
   </section>
 
-  <!-- Service Area -->
-  <section id="service-area" class="py-20 bg-primary">
-    <div class="max-w-7xl mx-auto px-4 text-center mb-12">
-      <h2 class="text-4xl font-bold text-white mb-4">We Serve Southern Middle Tennessee</h2>
+  <!-- Testimonials -->
+  <section class="py-20 px-6 bg-green-50">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">What Families Say</h2>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <p class="text-gray-600 text-sm mb-3">"Got a quote same day. My yard has never looked better!"</p>
+          <p class="text-gray-900 font-medium text-sm">— Ken S.</p>
+        </div>
+        
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <p class="text-gray-600 text-sm mb-3">"So easy to book. No more yard accidents!"</p>
+          <p class="text-gray-900 font-medium text-sm">— Amy H.</p>
+        </div>
+        
+        <div class="bg-white rounded-xl p-6 shadow-sm">
+          <p class="text-gray-600 text-sm mb-3">"They text when they're coming and done. Very professional."</p>
+          <p class="text-gray-900 font-medium text-sm">— Arianna A.</p>
+        </div>
+      </div>
     </div>
-    <div class="max-w-3xl mx-auto px-4 grid grid-cols-4 gap-4">
-      <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center"><span class="text-white font-semibold">Spring Hill</span></div>
-      <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center"><span class="text-white font-semibold">Franklin</span></div>
-      <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center"><span class="text-white font-semibold">Thompson's Station</span></div>
-      <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center"><span class="text-white font-semibold">Columbia</span></div>
-      <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center"><span class="text-white font-semibold">Brentwood</span></div>
-      <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center"><span class="text-white font-semibold">Murfreesboro</span></div>
-      <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center"><span class="text-white font-semibold">Antioch</span></div>
-      <div class="bg-white/10 backdrop-blur rounded-xl p-4 text-center"><span class="text-white font-semibold">Nolensville</span></div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="py-16 px-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">We Serve</h2>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Spring Hill</span>
+        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Franklin</span>
+        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Columbia</span>
+        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Thompson's Station</span>
+        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Brentwood</span>
+        <span class="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700">Murfreesboro</span>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-      <div>
-        <div class="flex items-center gap-2 mb-4">
-          <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center"><span class="text-2xl">🐕</span></div>
-          <span class="font-bold text-xl">Pet Waste Hero</span>
-        </div>
-        <p class="text-slate-400">Spring Hill's favorite pooper scooper since 2018. Making yards clean, families happy!</p>
-      </div>
-      <div>
-        <h4 class="font-bold mb-4">Contact</h4>
-        <ul class="space-y-2 text-slate-400">
-          <li>📍 Spring Hill, TN</li>
-          <li>📱 <a href="https://wa.me/4155238886" class="text-primary hover:underline">(415) 523-8886</a></li>
-          <li>✉️ hello@petwastehero.com</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold mb-4">Quick Links</h4>
-        <ul class="space-y-2 text-slate-400">
-          <li><a href="#pricing" class="hover:text-primary">Pricing</a></li>
-          <li><a href="#reviews" class="hover:text-primary">Reviews</a></li>
-          <li><a href="#service-area" class="hover:text-primary">Service Area</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400">
-      <p>© 2026 Pet Waste Hero. All rights reserved. Made with 🐕 in Tennessee</p>
+  <footer class="bg-gray-900 text-white py-12 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="font-bold text-xl mb-4">Pet Waste Hero</p>
+      <p class="text-gray-400 mb-6">Spring Hill's favorite pooper scooper since 2018.</p>
+      <a href="https://wa.me/4155238886" class="text-green-400 hover:underline">Text us</a>
+      <p class="text-gray-500 text-sm mt-8">© 2026 Pet Waste Hero. All rights reserved.</p>
     </div>
   </footer>
-
 </body>
 </html>
