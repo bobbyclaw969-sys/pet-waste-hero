@@ -11,7 +11,7 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Floating WhatsApp Button */}
       <a 
-        href="https://wa.me/16154869348?text=Hi%20Alex,%20I'd%20like%20a%20quote%20for%20yard%20cleaning!"
+        href="https://wa.me/4155238886?text=Hi%20Alex,%20I'd%20like%20a%20quote%20for%20yard%20cleaning!"
         className="whatsapp-float"
         target="_blank"
         rel="noopener noreferrer"
@@ -38,13 +38,13 @@ export default function Home() {
               <a href="#pricing" className="px-4 py-2 text-gray-600 hover:text-green-600 font-medium">Pricing</a>
               <a href="#reviews" className="px-4 py-2 text-gray-600 hover:text-green-600 font-medium">Reviews</a>
               <a 
-                href="https://wa.me/16154869348?text=Hi,%20I'd%20like%20a%20quote!"
+                href="https://wa.me/4155238886?text=Hi,%20I'd%20like%20a%20quote!"
                 className="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-semibold transition flex items-center gap-2"
               >
                 <svg viewBox="0 0 32 32" className="w-4 h-4" fill="white">
                   <path d="M16.002 1.923c-5.316 0-9.63 4.305-9.63 9.63 0 1.704.449 3.335 1.23 4.77l-.988 3.583 3.742-1.11c1.563.824 3.334 1.324 5.646 1.324h.001c5.316 0 9.63-4.305 9.63-9.63s-4.305-9.63-9.63-9.63zm0 17.39c-1.285 0-2.49-.336-3.567-.965l-.254-.148-2.654.787.786-2.582-.169-.27c-.695-1.111-1.065-2.39-1.065-3.768 0-4.298 3.494-7.792 7.792-7.792s7.792 3.494 7.792 7.792-3.494 7.792-7.792 7.792z"/>
                 </svg>
-                Text (615) 486-9348
+                Text (415) 523-8886
               </a>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <a 
-                  href="https://wa.me/16154869348?text=Hi%20Alex,%20tell%20me%20about%20your%20yard%20and%20dogs!"
+                  href="https://wa.me/4155238886?text=Hi%20Alex,%20tell%20me%20about%20your%20yard%20and%20dogs!"
                   className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition text-center flex items-center justify-center gap-2"
                 >
                   <svg viewBox="0 0 32 32" className="w-6 h-6" fill="white">
@@ -141,7 +141,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: "💬", title: "Text for Instant Quotes", desc: "Skip the phone call – just text us at (615) 486-9348 for a same-day quote!" },
+              { icon: "💬", title: "Text for Instant Quotes", desc: "Skip the phone call – just text us at (415) 523-8886 for a same-day quote!" },
               { icon: "🏠", title: "Locally Owned", desc: "Not a franchise. We're your Spring Hill neighbors, serving since 2018." },
               { icon: "🛡️", title: "Sanitary & Safe", desc: "We sanitize all equipment & shoes before every visit." },
               { icon: "🚫", title: "No Contracts", desc: "Pay as you go. Not happy? Cancel anytime – no penalties." },
@@ -182,7 +182,7 @@ export default function Home() {
                   <li className="flex items-center gap-2 text-gray-600"><span className="text-green-500">✓</span> Front & backyard</li>
                   <li className="flex items-center gap-2 text-gray-600"><span className="text-green-500">✓</span> Weekly or bi-weekly</li>
                 </ul>
-                <a href="https://wa.me/16154869348?text=Hi,%20I%20have%20a%20small%20yard%20and%20want%20to%20book!" className="block w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full font-semibold transition text-center">Text to Book</a>
+                <a href="https://wa.me/4155238886?text=Hi,%20I%20have%20a%20small%20yard%20and%20want%20to%20book!" className="block w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full font-semibold transition text-center">Text to Book</a>
               </div>
             </div>
             <div className="bg-white border-2 border-green-500 rounded-3xl p-8 relative shadow-2xl transform scale-105">
@@ -199,7 +199,7 @@ export default function Home() {
                   <li className="flex items-center gap-2 text-gray-600"><span className="text-green-500">✓</span> Front, backyard & sides</li>
                   <li className="flex items-center gap-2 text-gray-600"><span className="text-green-500">✓</span> Patio/deck areas</li>
                 </ul>
-                <a href="https://wa.me/16154869348?text=Hi,%20I%20have%20a%20medium%20yard%20and%20want%20to%20book!" className="block w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full font-semibold transition text-center">Text to Book</a>
+                <a href="https://wa.me/4155238886?text=Hi,%20I%20have%20a%20medium%20yard%20and%20want%20to%20book!" className="block w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full font-semibold transition text-center">Text to Book</a>
               </div>
             </div>
             <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 hover:border-green-500 transition">
@@ -215,7 +215,7 @@ export default function Home() {
                   <li className="flex items-center gap-2 text-gray-600"><span className="text-green-500">✓</span> Custom scheduling</li>
                   <li className="flex items-center gap-2 text-gray-600"><span className="text-green-500">✓</span> Multiple dog discount</li>
                 </ul>
-                <a href="https://wa.me/16154869348?text=Hi,%20I%20have%20a%20large%20yard%20and%20want%20a%20quote!" className="block w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full font-semibold transition text-center">Get Quote</a>
+                <a href="https://wa.me/4155238886?text=Hi,%20I%20have%20a%20large%20yard%20and%20want%20a%20quote!" className="block w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full font-semibold transition text-center">Get Quote</a>
               </div>
             </div>
           </div>
@@ -232,7 +232,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { step: "1", icon: "💬", title: "Text Us", desc: "Send us a message at (615) 486-9348 with your address" },
+              { step: "1", icon: "💬", title: "Text Us", desc: "Send us a message at (415) 523-8886 with your address" },
               { step: "2", icon: "💰", title: "Get Quote", desc: "We'll reply with a transparent price in minutes" },
               { step: "3", icon: "📅", title: "Book Time", desc: "Pick a weekly or bi-weekly schedule" },
               { step: "4", icon: "✨", title: "Enjoy!", desc: "We clean your yard and text you when done" },
@@ -305,7 +305,7 @@ export default function Home() {
               <h4 className="font-bold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>📍 Spring Hill, TN</li>
-                <li>📱 <a href="https://wa.me/16154869348" className="text-green-400 hover:underline">(615) 486-9348</a></li>
+                <li>📱 <a href="https://wa.me/4155238886" className="text-green-400 hover:underline">(415) 523-8886</a></li>
                 <li>✉️ hello@petwastehero.com</li>
               </ul>
             </div>
